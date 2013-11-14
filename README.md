@@ -1,1 +1,1 @@
-Simpe WP templates
+Simpe WP templates  
