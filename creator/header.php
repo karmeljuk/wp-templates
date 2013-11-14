@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+
+<head profile="http://gmpg.org/xfn/11">
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width" />
+
+<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
+
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/javascript/tabs.js"></script>
+<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascript/jquery.easing.1.1.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37255491-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<?php wp_head(); ?>
+</head>
+<body <?php body_class($class); ?>> 
+
+
+<!-- Start BG -->
+<div id="bg">
+<!-- Start Header -->
+<div class="header">
+<div class="header-in">
+	<div class="flags"><?php language_selector_flags(); ?></div>
+	
+	<div class="header-bottom">
+		<div class="logo site-tittle">
+			 <a href="<?php echo get_option('home'); ?>/">
+			 	<h1><?php bloginfo('name'); ?></h1>
+			 </a>
+		</div>
+		<?php wp_nav_menu('menu=main'); ?>
+		<div class="description">
+			<h2>
+			<?php _e( 'Method of Creative Improvisation Territory Creation' , 'twentyeleven');	?>
+			</h2>
+		</div>
+	</div>
+</div>
+
+</div><!-- class="header" -->
+<!-- End Header -->
+
+<!-- Start Con-->
+<div class="con">
+	<div class="scs1">
+		<!-- Start SL -->
+		<div class="sc-all">
+			<div class="sc" id="content">
